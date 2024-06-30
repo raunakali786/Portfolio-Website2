@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Raunak - Developer Portfolio</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,400;0,700;1,600&display=swap"
+        rel="stylesheet">
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+        }
+
+        body {
+            background-color: rgb(3, 3, 60);
+            color: white;
+            font-family: 'Poppins', sans-serif;
+        }
+        
+        nav{
+            display: flex;
+            justify-content:space-around;
+            align-items: center;
+            height: 80px;
+            background-color: rgb(1, 1, 14);
+        }
+
+        nav ul{
+            display: flex;
+            justify-content: center;
+        }
+
+        nav ul li{
+            list-style: none;
+            margin: 0 23px;
+        }
+
+        nav ul li a{
+            text-decoration: none;
+            color: white;
+        }
+
+        nav ul li a:hover{
+            color: rgb(143, 143, 220);
+            font-size: 1.01rem;
+        }
+
+        .left{
+            font-size: 1.5rem;
+        }
+
+        .firstsection{
+            display: flex;
+            margin: 30px 0;
+            justify-content: space-around;
+            align-items: center;
+        }
+
+        .firstsection > div{
+            width: 40%; 
+        }
+
+        .leftsection{
+            font-size: 3rem;
+            /* margin: 70px 0; */
+    
+        }
+
+        .rightsection img{
+            width: 100%;
+        }
+
+        .purple{
+            color: plum;
+        }
+
+        .text-gray{
+            color: gray;
+        }
+
+        #element{
+            color: plum;
+        }
+
+        .secondsection{
+            max-width: 88vw;
+            margin: auto;
+        }
+
+        .secondsection h1{
+            font-size: 1.9rem;
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+        <nav>
+            <div class="left">Raunak's Portfolio</div>
+            <div class="right">
+                <ul>
+                    <li><a href="/">Home</a></li>
+                    <li><a href="/">About</a></li>
+                    <li><a href="/">Service</a></li>
+                    <li><a href="/">Projects</a></li>
+                    <li><a href="/">Contact Me</a></li>
+
+                </ul>
+            </div>
+        </nav>
+    </header>
+
+    <main>
+        <section class="firstsection">
+            <div class="leftsection">
+                Hi, My name is <span class="purple">Raunak</span>
+                <div>and I am a passionate</div>
+                <!-- <div>Web Developer</div> -->
+                <span id="element"></span>
+            </div>
+            <div class="rightsection">
+                <img src="developerimg.webp" alt="">
+            </div>
+        </section>
+
+        <section class="secondsection">
+            <span class="text-gray">What I have done so far? </span>
+            <h1>Past Experience</h1>
+        </section>
+    </main>
+    <script src="https://unpkg.com/typed.js@2.1.0/dist/typed.umd.js"></script>
+    <script>
+        var typed = new Typed('#element', {
+          strings: ['Web Developer', 'Software Developer', 'Java Developer'],
+          typeSpeed: 50,
+        });
+      </script>
+</body>
+
+</html>
